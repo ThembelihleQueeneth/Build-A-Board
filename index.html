@@ -16,7 +16,7 @@
         <button id="viewToggle" class="toggle-button">View Content</button>
    </header>
    
-   <div class="motherboard" id="div1">
+   <div class="motherboard" id="motherboardView">
     <div class="headingName1">
         <h1>Motherboard View</h1>
     </div>
@@ -73,13 +73,39 @@
     <button onclick="closePopup('cmos-popup')">Ok</button>
 </div>
 
-<div class="bios-container" id="div2">
+<!-- <div class="bios-container" id="div2">
   <div class="headingName2">
         <h1>BIOS VIEW</h1>
         <p>lorem</p>
         <p>lorem</p>
         <p>lore</p>
-    </div>
+    </div> -->
+
+    <section id="biosView" class="hidden-view">
+            <h2>BIOS Settings</h2>
+            <div class="bios-screen">
+                <p>BIOS Version: 1.0.0.1 <p>
+                <div class="bios-section">
+                    <h3>Boot Order [cite: 40]</h3>
+                    <ul>
+                        <li>1. Hard Drive</li>
+                        <li>2. USB Drive</li>
+                        <li>3. Network Boot</li>
+                    </ul>
+                </div>
+                <div class="bios-section">
+                    <h3>Security [cite: 42]</h3>
+                    <p>Secure Boot: [ON/OFF Placeholder]</p>
+                    <p>Password Protection: [ON/OFF Placeholder]</p>
+                </div>
+                <div class="bios-section">
+                    <h3>CMOS Clock [cite: 43]</h3>
+                    <p>Date: YYYY/MM/DD</p>
+                    <p>Time: HH:MM:SS</p>
+                </div>
+                <p class="bios-message">Press F10 to Save and Exit </p>
+            </div>
+        </section>
 
 </div>
 
