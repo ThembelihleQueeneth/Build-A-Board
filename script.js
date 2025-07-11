@@ -1,3 +1,7 @@
+ const viewtoggle = document.getElementById("viewToggle");
+ const motherboardView = document.getElementById("div1");
+ const biosView = document.getElementById("div2");
+ 
 function openPopup(popupId) {
         document.getElementById(popupId).classList.add("open-popup");
     }
@@ -5,9 +9,7 @@ function openPopup(popupId) {
     function closePopup(popupId) {
         document.getElementById(popupId).classList.remove("open-popup");
     }
- const viewtoggle = document.getElementById("viewToggle");
- const motherboardView = document.getElementById("div1");
- const biosView = document.getElementById("div2");
+
 
   viewtoggle.addEventListener("click", () => {
       
