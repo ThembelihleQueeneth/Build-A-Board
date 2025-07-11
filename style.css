@@ -107,6 +107,7 @@ header button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 20px;
+    margin: 60px;
+    border-radius: 12px;
 
 }
