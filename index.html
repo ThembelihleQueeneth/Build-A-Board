@@ -5,9 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build-A-Board</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button><img src="assets/images/CMOS.webp" alt=""></button>
-    <script src="script.js"></script>
+   <header>
+        <h1>motherboard</h1>
+   </header>
+<div class="container">
+    
+    <div><button onclick="openPopup('rom-popup')">Rom</button></div>
+     <div><button onclick="openPopup('cpu-popup')">CPU</button></div>
+    <div><button onclick="openPopup('ram-popup')">Ram</button></div>
+    <div><button onclick="openPopup('power-popup')">Power Unit</button></div>
+    <div><button onclick="openPopup('storage-popup')">Storage Device</button></div>
+    <div><button onclick="openPopup('cmos-popup')">CMOS</button></div>
+</div>
+
+
+<div class="popup" id="rom-popup">
+    <img src="assets/images/ROM.jpg" alt="ROM">
+    <h2>ROM</h2>
+    <p>ROM stands for Read-Only Memory. It's a type of computer memory that stores permanent data and instructions.</p>
+    <button onclick="closePopup('rom-popup')">Ok</button>
+</div>
+
+<div class="popup" id="power-popup">
+    <img src="assets/images/Power-Unit.jpeg" alt="Power Unit">
+    <h2>Power Unit</h2>
+    <p>A power unit provides energy to operate machinery or equipment, acting as the source of power.</p>
+    <button onclick="closePopup('power-popup')">Ok</button>
+</div>
+
+<div class="popup" id="storage-popup">
+    <img src="assets/images/Storage Drive.avif" alt="Storage Device">
+    <h2>Storage Device</h2>
+    <p>A storage device stores digital data, allowing saving, retrieving, and transferring information.</p>
+    <button onclick="closePopup('storage-popup')">Ok</button>
+</div>
+
+<div class="popup" id="cpu-popup">
+    <img src="assets/images/cpu.avif" alt="CPU">
+    <h2>CPU</h2>
+    <p>The CPU is the brain of the computer, running its operating system and applications.</p>
+    <button onclick="closePopup('cpu-popup')">Ok</button>
+</div>
+
+<div class="popup" id="ram-popup">
+    <img src="assets/images/ram.webp" alt="RAM">
+    <h2>Ram</h2>
+    <p>RAM provides temporary storage for data the processor is actively using, allowing fast access and multitasking.</p>
+    <button onclick="closePopup('ram-popup')">Ok</button>
+</div>
+
+<div class="popup" id="cmos-popup">
+    <img src="assets/images/ram.webp" alt="CMOS">
+    <h2>CMOS</h2>
+    <p>CMOS stores BIOS settings and system clock information, powered by a small battery on the motherboard.</p>
+    <button onclick="closePopup('cmos-popup')">Ok</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
