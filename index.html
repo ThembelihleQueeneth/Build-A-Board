@@ -8,12 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/system.png">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-        <h1>motherboard</h1>
+        <button id="viewToggle" class="toggle-button">View Content</button>
    </header>
+   
+   <div class="motherboard" id="div1">
+    <div class="headingName1">
+        <h1>Motherboard View</h1>
+    </div>
 <div class="container">
     
     <div><button onclick="openPopup('rom-popup')">Rom</button></div>
@@ -23,7 +29,7 @@
     <div><button onclick="openPopup('storage-popup')">Storage Device</button></div>
     <div><button onclick="openPopup('cmos-popup')">CMOS</button></div>
 </div>
-
+</div>
 
 <div class="popup" id="rom-popup">
     <img src="assets/images/ROM.jpg" alt="ROM">
@@ -65,6 +71,16 @@
     <h2>CMOS</h2>
     <p>CMOS stores BIOS settings and system clock information, powered by a small battery on the motherboard.</p>
     <button onclick="closePopup('cmos-popup')">Ok</button>
+</div>
+
+<div class="bios-container" id="div2">
+  <div class="headingName2">
+        <h1>BIOS VIEW</h1>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lore</p>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
